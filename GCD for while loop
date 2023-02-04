@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{ 
+int n1,n2;
+printf("enter two positives integers:");
+scanf("%d %d", &n1, &n2);
+while (n1!=n2)
+{ 
+if(n1>n2)
+n1-=n2;
+else
+n2-=n1;
+}
+printf("GCD=%d",n1);
+return 0;
+}
+enter two positive integers:81
+153
+GCD=9
